@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+  color: #424748;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -5,4 +11,14 @@ body {
 
 a {
   color: #00B7FF;
+}
+
+#show-flight {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+}
+
+#show-flight div:nth-child(even) {
+  font-weight: bold;
 }
