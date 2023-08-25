@@ -1,0 +1,17 @@
+<%- include('../partials/header') %>
+
+<section id="show-flight">
+  <div>Seat: </div>
+  <div><%= ticket.seat %></div>
+  <div>Price: </div>
+  <div><%= ticket.price %></div>
+  <div>Airline: </div>
+  <div><%= ticket.flight.airline %></div>
+  <div>Airport: </div>
+  <div><%= ticket.flight.airport %></div>
+  <div>FlightNo: </div>
+  <div><%= ticket.flight.flightNo %></div>
+</section>
+
+
+<%- include('../partials/footer') %>

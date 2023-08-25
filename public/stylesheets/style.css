@@ -17,8 +17,16 @@ a {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 1rem;
+  margin-right: 60rem;
 }
 
 #show-flight div:nth-child(even) {
   font-weight: bold;
+}
+
+.ticket-info {
+  display: inline-block;
+  margin: 10px; /* Adjust the margin as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
 }

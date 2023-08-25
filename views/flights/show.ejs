@@ -38,6 +38,7 @@
   <table>
     <thead>
       <tr>
+        <th>Created At:</th>
         <th>Airline</th>
         <th>Airport</th>
         <th>Arrival</th>
@@ -59,5 +60,19 @@
 <% } else { %>
   <h5>No Destinations Yet</h5>
 <% } %>
+
+<a href="/flights/<%=flight._id%>/tickets/new">New Ticket</a>
+
+<section id="show-ticket">
+  <% tickets.forEach(ticket => { %>
+  <div>
+    <div class="ticket-info">
+    <strong>Seat:</strong> <%= ticket.seat %> 
+    <strong>Price:</strong> <%= ticket.price %>
+    <strong>Airline:</strong> <%= ticket.flight.airline %>
+    <strong>Airport:</strong> <%= ticket.flight.airport %><br>
+  </div>
+  <% }) %>
+</section>
 
 <%- include('../partials/footer') %>
